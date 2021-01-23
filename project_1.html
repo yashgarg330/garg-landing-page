@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garg Machinery Store</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('bg.jpg');
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 52px;
+            height: 56px;
+            margin: 2px 53px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            margin: 2px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 700px;
+            margin: 35px auto;
+            /* border: 2px solid green; */
+        }
+
+        .navBar {
+            list-style: none;
+        }
+
+        .navBar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navBar li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 35px;
+        }
+
+        .navBar li a:hover,
+        .navBar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /* border: 2px solid yellow; */
+
+        }
+
+        .btn {
+            margin: 12px 6px;
+            background-color: black;
+            color: white;
+            padding: 6px 16px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(66, 64, 64);
+        }
+
+        .container {
+            margin: 78px 11px;
+            padding: 30px;
+            width: 445px;
+            /* border: 2px solid white; */
+            border-radius: 12px;
+            line-height: 0%;
+        }
+
+        .container h3 {
+            text-align: center;
+        }
+
+        .container p {
+            text-align: center;
+            margin-bottom: 26px;
+        }
+
+        .container button{
+            display: block;
+            width: 134px;
+            margin: 13px auto;
+        }
+
+        .form-group input {
+            font-family: 'Balsamiq Sans', cursive;
+            text-align: center;
+            display: block;
+            width: 281px;
+            margin: 2px auto;
+            padding: 8px;
+            border: 2px solid grey;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box is for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>Garg Machinery Store</div>
+        </div>
+        <!-- mid box is for navBar -->
+        <div class="mid">
+            <ul class="navBar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box is for buttons -->
+        <div class="right">
+            <button class="btn">Log in</button>
+            <button class="btn">Sign up</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Auto Parts</h3>
+        <p>Buy the best from the best</p>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your mail address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your locality">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
